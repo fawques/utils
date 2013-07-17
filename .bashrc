@@ -62,3 +62,14 @@ export EDITOR=nano
 export PATH=$PATH:.
 
 alias ls='ls --color=yes'
+alias rm='dl'
+dl(){
+    comando="mv"
+    while [[ $# -gt 0 ]]
+    do
+        comando="$comando $1"
+        shift
+    done
+    comando="$comando -i /tmp/.trash/"
+    $($comando)
+}
