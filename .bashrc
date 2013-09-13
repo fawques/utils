@@ -60,16 +60,24 @@ unset bash_prompt
 
 export EDITOR=nano
 export PATH=$PATH:.
+export LD_LIBRARY_PATH=/usr/local/lib
 
 alias ls='ls --color=yes'
-alias rm='dl'
-dl(){
-    comando="mv"
-    while [[ $# -gt 0 ]]
-    do
-        comando="$comando $1"
-        shift
-    done
-    comando="$comando -i /tmp/.trash/"
-    $($comando)
-}
+alias nauhere='(nautilus . & >/dev/null 2>/dev/null)'
+
+source /usr/share/doc/pkgfile/command-not-found.bash
+
+
+#### NOT WORKING
+
+#alias rm='dl'
+#dl(){
+#    comando="mv"
+#    while [[ $# -gt 0 ]]
+#    do
+#        comando="$comando $1"
+#        shift
+#    done
+#    comando="$comando -i /tmp/.trash/"
+#    $($comando)
+#}
