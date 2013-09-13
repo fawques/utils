@@ -1,0 +1,16 @@
+[color]
+	ui = true
+[user]
+	email = fawques@gmail.com
+	name = Víctor Guzmán
+[help]
+	autocorrect = 1
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+[credential]
+	helper = cache --timeout=-1
+[push]
+	default = simple
