@@ -1,3 +1,4 @@
+# Este script envía al servidor de raspi-fawques la IP pública del pc que lo ejecute
 
 import urllib
 import urllib2
