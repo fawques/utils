@@ -81,3 +81,6 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 #    comando="$comando -i /tmp/.trash/"
 #    $($comando)
 #}
+
+alias smake='make && paplay ~/TaDa.wav || paplay ~/Fail.wav'
+
