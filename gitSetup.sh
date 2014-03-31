@@ -8,3 +8,6 @@ git config --global alias.ci commit
 git config --global alias.co checkout
 git config --global alias.st status
 git config --global alias.br branch
+
+# stash-unapply -> deshacer un "git stash apply"
+git config --global alias.stash-unapply '!git stash show -p | git apply -R'
