@@ -82,5 +82,9 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 #    $($comando)
 #}
 
-alias smake='make && paplay ~/TaDa.wav || paplay ~/Fail.wav'
+TaDa(){
+        "$@" && paplay ~/TaDa.wav || paplay ~/Fail.wav
+}
+
+alias smake='TaDa make'
 
