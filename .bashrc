@@ -88,3 +88,4 @@ TaDa(){
 
 alias smake='TaDa make'
 
+source ~/git-completion.bash
