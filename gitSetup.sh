@@ -5,6 +5,7 @@ git config --global user.email "fawques@gmail.com"
 git config --global color.ui true
 git config --global help.autocorrect 1
 git config --global rebase.autosquash true
+git config --global log.decorate true
 
 git config --global alias.ci commit
 git config --global alias.co checkout
